@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/C.png" />
 
   <!-- Put your site title here -->
   <title>
     Chetan Reddy Narayanaswamy | Student at IIT Madras, India | Robotics Enthusiast
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Personal Portfolio">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="Robotics, Machine Learning, Reinforcement Learning" content="Chetan, Tensorflow, Pytorch, Robot Operating System" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -26,7 +26,7 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#research" class="nav__link">Research Experiences</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Key Projects</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Key Projects and Hackathons</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -66,14 +66,16 @@
             <div class="work__text">
               <h3>Safe Reinforcement Learning</h3>
               <h4><u>Indian Institute of Technology, Madras</u> </h4>
-              <p align="justify">
+              <p></p>
                 As a part of my dual degree thesis, I am working on building Human-in-the-loop, Safe and Verifiable Reinforcement Learning. 
+                I implemented a modified version of the Deep Deterministic Policy Gradients (DDPG) algorithm in the inverted pendulum environment 
+                with continuous action masking and achieved 100% safety during exploration, with high safety guarantees of 95% in testing when the safety layer was removed.
               </p>
 
 
               <div class="work__links">
                 <a href="https://github.com/chetanreddy1412/Safe-RL" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Visit GitHub <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/chetanreddy1412/Safe-RL" title="View Source Code" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
@@ -85,7 +87,7 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <img src="./images/Projects/pendulum.png" class="work__image" alt="Project 1" />
+              <img src="./images/Projects/pendulum.png" class="work__image" alt="Project 1" width="300" height="300"/>
             </div>
           </div>
 
@@ -94,13 +96,16 @@
               <h3>Reactive Obstacle Avoidance using CBFs</h3>
               <h4><u>Royal Institute of Technology, Sweden</u> </h4>
               <p>
-                In this work, I built a low level obstacle avoidance controller that does not rely on global localisation or pre-existing maps. It provides provable guarantees to safety in an unknown and uncertain environment.
+                In this work, we aim to construct a low level obstacle avoidance controller that does not rely on global localisation or pre-existing maps
+                 while providing provable guarantees to safety in an unknown and uncertain environment. <br><br>
+                I built a fully functioning pipeline in ROS that generates the safe sets from the depth images and a control barrier function (CBF) based controller
+                that uses these safe sets to generate velocity commands. After testing with real drones, we aim to submit our work to <b>IROS 2024</b>.
               </p>
 
 
               <div class="work__links">
                 <a href="https://github.com/chetanreddy1412/safe-obstacle-avoidance" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Visit GitHub <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/chetanreddy1412/safe-obstacle-avoidance">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
@@ -108,7 +113,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Projects/cbf.png" class="work__image" alt="Project 1" />
+              <img src="./images/Projects/cbf.png" class="work__image" alt="Project 1" width="400" height="400"/>
             </div>
           </div>
 
@@ -117,15 +122,14 @@
               <h3>Causal Artificial Intelligence | Patent*</h3>
               <h4><u>Adobe Research, Bengaluru </u> </h4>
               <p>
-                With counterparts from other IITs (Indian Institute of Technology), I worked on a group project in the field of Causal Artificial Intelligence 
-                under the mentorship of Dr. Atanu Sinha, a principal scientist at Adobe. We built a novel deep learning-based causal inference algorithm designed to cluster markets.
+                With counterparts from other IITs (Indian Institute of Technology), I worked on a group project in the field of Causal Artificial Intelligence. We built a novel deep learning-based causal inference algorithm designed to cluster markets.
                 <br>
                 <br>
-                *We developed a patent from our work which is has been validated by Adobe's Internal Committee and is under the submission process.
+                *We developed a patent from our work which is has been validated by Adobe's Internal Committee and is presently under the submission process.
               </p>
             </div>
             <div class="work__image-box">
-              <img src="./images/Projects/causal_graph.png" class="work__image" alt="Project 3" />
+              <img src="./images/Projects/causal_graph.png" class="work__image" alt="Project 3" width="400" height="400"/>
             </div>
           </div>
           <div class="work__box">
@@ -133,30 +137,176 @@
               <h3>Deep RL in Autonomous Cars</h3>
               <h4><u>Hokkaido University, Japan</u> </h4>
               <p>
-                Under the guidance of Prof. Hidenori Kawamura, renowned for his research in 
-                Intelligent Robotics, and multi-agent systems, I worked on applying deep reinforcement learning in 
-                autonomous cars to optimize traffic flow in scenarios like signal intersections and highway merges.
+                I worked on applying deep reinforcement learning in autonomous cars to optimize traffic flow in scenarios like signal intersections and highway merges. 
+                I explored various state space encodings for traffic representation and implemented extensions to deep Q learning, 
+                such as double Q learning, prioritized replay, dueling networks, and noisy nets. <br><br>Having conducted a thorough empirical analysis, 
+                I showed that RL-based autonomous cars can reduce congestion time significantly compared to rule-based agents by 30%.
               </p>
               <div class="work__links">
                 <a href="https://oggs.oia.hokudai.ac.jp/en/experience/1426" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  View Report <span>&rarr;</span>
                 </a>
 
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Projects/deep_rl.png" class="work__image" alt="Project 3" />
+              <img src="./images/Projects/deep_rl.png" class="work__image" alt="Project 3" width="400" height="400"/>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Key Projects ***** -->
 
-    <section class="client" id="clients">
+    <section class="projects" id="projects">
       <div class="row">
-        <h2>Key Projects</h2>
+        <h2>Key Projects and Hackathons</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Drone Swarm Challenge</h3>
+              <h4><u>Inter-IIT Tech Meet 2024, IIT Kanpur</u> </h4>
+              <p>
+                We transformed an existing ROS-based architecture into a platform-independent and user-friendly Python API to control the drones and perform swarming. 
+                Having designed a post-flight analytics dashboard to assess and tune the algorithm using React.js and Plotly, we achieved stable hovering and 
+                vision-guided rectangular motion of drones by implementing a multi-axis PID controller.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1"  width="300" height="300"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>RL Games Hackathon</h3>
+              <h4><u>National Champions, Shaastra 2022</u> </h4>
+              <p>
+                We created bots using reinforcement learning to compete with other bots in a virtual two-player 2D game setting. 
+                With a novel feature engineering technique inspired by the decision tree algorithm, we implemented two Deep RL algorithms namely DQN and Policy Gradient based.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddy1412/RL-Games" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddy1412/RL-Games" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <img src="./images/Projects/RL_Games.png" class="work__image" alt="Project 1"  width="400" height="400"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Wells Fargo Quantitative AI Hackathon</h3>
+              <h4><u>3rd Place, Shaastra 2022</u> </h4>
+              <p>
+                Secured 3rd place out of 500+ teams registered across the country in the national-level quantitative AI hackathon 
+                in which we forecasted the implied volatility surface of options over 60 trading days using 2.5 years of past volatility surface data. 
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddy1412/Wells-Fargo-Quantitative-AI-Hackathon" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddy1412/Wells-Fargo-Quantitative-AI-Hackathon" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <img src="./images/Projects/volatility.png" class="work__image" alt="Project 1"  width="600" height="400"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Mission Planner for Autonomous Robots</h3>
+              <h4><u>Course Project, Introduction to Robotics, KTH</u> </h4>
+              <p>
+                Implemented Inverse Kinematics solution for a robotic arm using its Denavit-Hartenberg parameterization and achieved autonomous navigation and manipulation based on high level instructions by building a mission planner for the
+                TIAGo robot in ROS using behaviour trees. 
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddy1412/Introduction-to-Robotics-DD2410/tree/main" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddy1412/Introduction-to-Robotics-DD2410/tree/main" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <img src="./images/Projects/tiago.png" class="work__image" alt="Project 1"  width="300" height="400"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Flipkart Grid Robotics Challenge</h3>
+              <h4><u></u> </h4>
+              <p>
+                We implemented a central monitoring/navigation system aimed to control robots in a warehouse. 
+                Using OpenCV to understand the arena and estimate the position and orientation of the robot, we developed
+                a central navigation system to instruct the robot on go to the desired location and drop the packages.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddy1412/Flipkart-Grid-3.0-Robotics" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddy1412/Flipkart-Grid-3.0-Robotics" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <img src="./images/Projects/flipkart.png" class="work__image" alt="Project 1"  width="400" height="300"/>
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
     </section>
