@@ -115,6 +115,40 @@ img {
     max-width: 100%;
 }
 
+.work__image {
+    width: 600px;
+    height: 400px;
+}
+
+video {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    object-fit: contain; /* Or use 'cover' if you want the video to fill the space */
+    max-width: 100%;
+}
+
+/* @media(max-width: 600px)
+{
+    video {
+        width: 400;
+        height: 400;
+
+    }
+
+}
+
+@media(max-width: 500px)
+{
+    video {
+        width: 300;
+        height: 300;
+
+    }
+
+} */
+
+
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
@@ -461,7 +495,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
 }
 
 @media(max-width: 500px) {
@@ -499,6 +533,8 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
+
+
 
 @media(min-width: 901px) {
     .work__image-box {

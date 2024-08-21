@@ -111,10 +111,16 @@
             <div class="work__text">
               <h3>Safe Reinforcement Learning</h3>
               <h4><u>Indian Institute of Technology, Madras</u> </h4>
-              <p></p>
-                As a part of my dual degree thesis, I am working on building Human-in-the-loop, Safe and Verifiable Reinforcement Learning. 
-                I implemented a modified version of the Deep Deterministic Policy Gradients (DDPG) algorithm in the inverted pendulum environment 
-                with continuous action masking and achieved 100% safety during exploration, with high safety guarantees of 95% in testing when the safety layer was removed.
+              <p>
+                As a part of my dual degree thesis, I developed a human-in-the-loop safe reinforcement learning framework that ensures safety in both training and
+                deployment. 
+              </p>
+              <p>
+                The approach involves two steps: the first step is the utilization of expert
+                human input to establish a Safe State Space (SSS) and a corresponding Conservative Safe
+                Policy (CSP). In the second step, we used a modified version of the Deep Deterministic
+                Policy Gradient algorithm augmented with a safety layer (built using SSS and CSP) that
+                is learned by the agent during the training.
               </p>
 
 
@@ -132,7 +138,11 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="500" height="400"/>
+              <video width="320" height="240" controls>
+                <source src="./images/Projects/SafeDDPG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <!-- <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="320" height="240"/> -->
             </div>
           </div>
 
@@ -158,7 +168,10 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Projects/cbf_ellipsoid.png" class="work__image" alt="Project 1" width="500" height="400"/>
+              <video controls>
+                <source src="./images/Projects/Ellipsoidal_CBF.mp4" type="video/mp4">
+              </video>
+              <!-- <img src="./images/Projects/cbf_ellipsoid.png" class="work__image" alt="Project 1" width="500" height="400"/> -->
             </div>
           </div>
 
@@ -174,8 +187,11 @@
                 submitted to the US Patent and Trademark Office (USPTO).
               </p>
             </div>
+            <!-- <div class="work__image-box">
+              <img src="./images/Projects/Adobe/causal_graph.png" class="work__image" alt="Project 3" width="400" height="400"/>
+            </div> -->
             <div class="work__image-box">
-              <img src="./images/Projects/causal_graph.png" class="work__image" alt="Project 3" width="400" height="400"/>
+              <img src="./images/Projects/Adobe/dags.png" class="work__image" alt="Project 3" width="400" height="400"/>
             </div>
           </div>
           <div class="work__box">
@@ -265,7 +281,7 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1"  width="300" height="300"/>
+              <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -395,11 +411,9 @@
               </div>
             </div>
             <div class="work__image-box">
-              <!-- <video width="320" height="240" controls>
-                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video> -->
-              <img src="./images/Projects/upskill.png" class="work__image" alt="Project 1"  width="500" height="400"/>
+              <a href="https://www.youtube.com/watch?v=uyRifRll5lA&ab_channel=ShaastraIITM">
+                <img src="./images/Projects/upskill.png" class="work__image" alt="Project 1"  width="500" height="400"/>
+              </a>
             </div>
           </div>
   
