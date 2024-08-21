@@ -115,30 +115,46 @@ img {
     max-width: 100%;
 }
 
+/* p {
+    text-align: justify;
+  } */
+
+.header__text p {
+    text-align: left;
+}
 .work__image {
     width: 600px;
     height: 400px;
 }
 
+
 video {
     display: flex;
-    width: 600px;
-    height: 400px;
+    width: 60rem;
+    height: 40rem;
     object-fit: contain; /* Or use 'cover' if you want the video to fill the space */
     max-width: 100%;
 }
 
-/* @media(max-width: 600px)
-{
-    video {
-        width: 400;
-        height: 400;
+.work__image-description p {
+    text-align: center;
+    width: 60rem
+}
+/* .video-description {
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+} */
 
+@media(max-width: 900px)
+{
+    .work__image-description p {
+        width: 90%
     }
 
 }
 
-@media(max-width: 500px)
+/* @media(max-width: 500px)
 {
     video {
         width: 300;
@@ -146,7 +162,7 @@ video {
 
     }
 
-} */
+} */ */
 
 
 /* --------------------------------------- */
@@ -171,6 +187,9 @@ h3 {
 @media(max-width: 900px) {
     .heading-primary {
         font-size: 6.5rem;
+    }
+    .header__text p{
+        text-align: center ;
     }
 }
 
@@ -468,8 +487,8 @@ body:not(.user-is-tabbing) a:focus {
     .header {
         /* text-align: center;
         background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/Stanford\ BG\ 2.jpg');
-        background-position: center; */
+        url('./images/Stanford\ BG\ 2.jpg');*/
+        background-position: center; 
         font-size: var(--font-size-small);
     }
 
@@ -491,6 +510,14 @@ body:not(.user-is-tabbing) a:focus {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
+    }
+
+    .work__text {
+        order: 2; /* Ensure text appears before the image */
+    }
+
+    .work__image-box {
+        order: 1; /* Ensure image appears after the text */
     }
 }
 
@@ -596,6 +623,11 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.about__photo {
+    width: 400px;
+    height: 400px;
+}
+
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
@@ -636,7 +668,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    height: 4rem;
+    height: 3rem;
+    transform: translateY(15%);
 }
 
 .footer__github-buttons {

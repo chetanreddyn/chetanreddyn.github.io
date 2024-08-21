@@ -94,7 +94,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/about_me.jpg" alt="" />
+            <img class="about__photo" src="./images/about_me_smaller.png" alt="" />
           </div>
         </div>
       </div>
@@ -111,11 +111,11 @@
             <div class="work__text">
               <h3>Safe Reinforcement Learning</h3>
               <h4><u>Indian Institute of Technology, Madras</u> </h4>
-              <p>
+              <p align="justify">
                 As a part of my dual degree thesis, I developed a human-in-the-loop safe reinforcement learning framework that ensures safety in both training and
                 deployment. 
               </p>
-              <p>
+              <p align="justify">
                 The approach involves two steps: the first step is the utilization of expert
                 human input to establish a Safe State Space (SSS) and a corresponding Conservative Safe
                 Policy (CSP). In the second step, we used a modified version of the Deep Deterministic
@@ -138,9 +138,9 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <video width="320" height="240" controls>
+              <video controls>
                 <source src="./images/Projects/SafeDDPG.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+
               </video>
               <!-- <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="320" height="240"/> -->
             </div>
@@ -150,7 +150,7 @@
             <div class="work__text">
               <h3>Reactive Obstacle Avoidance using Depth Images and CBFs</h3>
               <h4><u>Royal Institute of Technology, Sweden</u> </h4>
-              <p>
+              <p align="justify">
                 In this work, we aim to construct a low level obstacle avoidance controller that does not rely on global localisation or pre-existing maps
                  while providing provable guarantees to safety in an unknown and uncertain environment. <br><br>
                 I built a fully functioning pipeline in ROS that generates the safe sets from the depth images and a control barrier function (CBF) based controller
@@ -179,7 +179,7 @@
             <div class="work__text">
               <h3>Causal Artificial Intelligence | Patent*</h3>
               <h4><u>Adobe Research, Bengaluru </u> </h4>
-              <p>
+              <p align="justify">
                 With counterparts from other IITs (Indian Institute of Technology), I worked on a group project in the field of Causal Artificial Intelligence. We built a novel deep learning-based causal inference algorithm designed to cluster markets.
                 <br>
                 <br>
@@ -198,7 +198,7 @@
             <div class="work__text">
               <h3>Deep RL in Autonomous Cars</h3>
               <h4><u>Hokkaido University, Japan</u> </h4>
-              <p>
+              <p align="justify">
                 I worked on applying deep reinforcement learning in autonomous cars to optimize traffic flow in scenarios like signal intersections and highway merges. 
                 I explored various state space encodings for traffic representation and implemented extensions to deep Q learning, 
                 such as double Q learning, prioritized replay, dueling networks, and noisy nets. <br><br>Having conducted a thorough empirical analysis, 
@@ -212,8 +212,12 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Projects/deep_rl.png" class="work__image" alt="Project 3" width="400" height="400"/>
+              <!-- <img src="./images/Projects/deep_rl.png" class="work__image" alt="Project 3" width="400" height="400"/> -->
+              <video controls>
+                <source src="./images/Projects/STSI/Traffic Flow.mp4" type="video/mp4">
+              </video>
             </div>
+
           </div>
         </div>
       </div>
@@ -226,14 +230,45 @@
         <h2>Key Projects</h2>
         <div class="work__boxes">
 
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Drone Swarm Challenge</h3>
+              <h4><u>Inter-IIT Tech Meet 2024, IIT Kanpur</u> </h4>
+              <p align="justify">
+                We transformed an existing ROS-based architecture into a platform-independent and user-friendly Python API to control the drones and perform swarming. 
+                Having designed a post-flight analytics dashboard to assess and tune the algorithm using React.js and Plotly, we achieved stable hovering and 
+                vision-guided rectangular motion of drones by implementing a multi-axis PID controller.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <video controls>
+                <source src="./images/Projects/Drona/Drona Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="work__image-description">
+                <p>Stable hovering with a multi-axis PID Controller</p>
+              </div>
+              <!-- <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1" /> -->
+            </div>
+          </div>
 
           <div class="work__box">
             <div class="work__text">
               <h3>RL Games Hackathon</h3>
               <h4><u>National Champions, Shaastra 2022</u> </h4>
-              <p>
+              <p align="justify">
                 We created bots using reinforcement learning to compete with other bots in a virtual two-player 2D game setting. 
-                With a novel feature engineering technique inspired by the decision tree algorithm, we implemented two Deep RL algorithms namely DQN and Policy Gradient based.
+                With a novel feature engineering technique inspired by the decision tree algorithm, we implemented two Deep RL algorithms namely DQN and Policy Gradient based. In the video, our agent is A (the blue snake) vs and opponent in the tournament.
               </p>
 
 
@@ -252,44 +287,21 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <img src="./images/Projects/RL_Games.png" class="work__image" alt="Project 1"  width="400" height="400"/>
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Drone Swarm Challenge</h3>
-              <h4><u>Inter-IIT Tech Meet 2024, IIT Kanpur</u> </h4>
-              <p>
-                We transformed an existing ROS-based architecture into a platform-independent and user-friendly Python API to control the drones and perform swarming. 
-                Having designed a post-flight analytics dashboard to assess and tune the algorithm using React.js and Plotly, we achieved stable hovering and 
-                vision-guided rectangular motion of drones by implementing a multi-axis PID controller.
-              </p>
-
-
-              <div class="work__links">
-                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" target="_blank" class="link__text">
-                  Visit GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <!-- <video width="320" height="240" controls>
-                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+              <video controls>
+                <source src="./images/Projects/RL Games/Trained Agent vs Another Agent.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video> -->
-              <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1" />
+              </video>
+              <!-- <img src="./images/Projects/RL_Games.png" class="work__image" alt="Project 1"  width="400" height="400"/> -->
             </div>
           </div>
+
 
           <div class="work__box">
             <div class="work__text">
               <h3>Wells Fargo Quantitative AI Hackathon</h3>
               <h4><u>3rd Place, Shaastra 2022</u> </h4>
-              <p>
+              <p align="justify">
                 Secured 3rd place out of 500+ teams registered across the country in the national-level quantitative AI hackathon 
                 in which we forecasted the implied volatility surface of options over 60 trading days using 2.5 years of past volatility surface data. 
               </p>
@@ -317,7 +329,7 @@
             <div class="work__text">
               <h3>Mission Planner for Autonomous Robots</h3>
               <h4><u>Course Project, Introduction to Robotics, KTH</u> </h4>
-              <p>
+              <p align="justify">
                 Implemented Inverse Kinematics solution for a robotic arm using its Denavit-Hartenberg parameterization and achieved autonomous navigation and manipulation based on high level instructions by building a mission planner for the
                 TIAGo robot in ROS using behaviour trees. 
               </p>
@@ -333,11 +345,11 @@
               </div>
             </div>
             <div class="work__image-box">
-              <!-- <video width="320" height="240" controls>
-                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video> -->
-              <img src="./images/Projects/tiago.png" class="work__image" alt="Project 1"  width="300" height="400"/>
+              <video controls>
+                <source src="./images/Projects/Autonomous Mission Planner/tiago.mp4" type="video/mp4">
+
+              </video>
+              <!-- <img src="./images/Projects/tiago.png" class="work__image" alt="Project 1"  width="300" height="400"/> -->
             </div>
           </div>
 
@@ -345,7 +357,7 @@
             <div class="work__text">
               <h3>Flipkart Grid Robotics Challenge</h3>
               <h4><u></u> </h4>
-              <p>
+              <p align="justify">
                 We implemented a central monitoring/navigation system aimed to control robots in a warehouse. 
                 Using OpenCV to understand the arena and estimate the position and orientation of the robot, we developed
                 a central navigation system to instruct the robot on go to the desired location and drop the packages.
@@ -366,7 +378,9 @@
                 <source src="./images/With_Safe_Set.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
-              <img src="./images/Projects/flipkart.png" class="work__image" alt="Project 1"  width="400" height="300"/>
+              <video controls>
+                <source src="./images/Projects/Flipkart/Flipkart Grid.mp4" type="video/mp4" />
+              </video>  
             </div>
           </div>
 
@@ -386,7 +400,7 @@
             <div class="work__text">
               <h3>UpSkill</h3>
               <h4><u>Social Initiative, Shaastra 2021</u> </h4>
-              <p>
+              <p align="justify">
                 UpSkill was an initiative which aimed to improve CS Education in middle schools level by equipping teachers with new methodologies and introduce a curriculum based on block-based programming. 
                 As a student coordinator, I worked with the team in ideating, planning and executing all the activities and events we held as a part of this initiative. 
                 Carried out during the COVID lockdown, the social endeavor was a huge success, impacting over 7000 school teachers across India through online lecture series and workshops.
@@ -438,21 +452,21 @@
 
           <tr>
 
-            <td> <img src="./images/Location.svg" class="footer__social-image" alt="Location"></td>
+            <!-- <td> <img src="./images/Location.svg" class="footer__social-image" alt="Location"></td> -->
             
-            <td valign="middle">
+            <!-- <td valign="middle">
               &nbsp;
               Bengaluru, India
-            </td>
+            </td> -->
           <!-- </tr>
 
           <tr> -->
 
-            <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/envelope.svg" class="footer__social-image" alt="Gmail"></td>
+            <td> <img src="./images/envelope.svg" class="footer__social-image" alt="Gmail"></td>
             <td valign="middle">
               &nbsp;
-              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=me19b093@smail.iitm.ac.in" title="Link to Send Email">
-                  Email
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=chetanrn@stanford.edu" title="Link to Send Email">
+                  E-Mail
               </a>
             </td>
           <!-- </tr>
@@ -468,7 +482,7 @@
           <!-- </tr>
           <tr> -->
 
-            <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/github.svg" class="footer__social-image" alt="Github"></td>
+            <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/github.svg" class="footer__social-image" alt="Github"></td>
             <td>
               &nbsp;
               <a href="https://github.com/chetanreddy1412" title="Link to Github Profile">
