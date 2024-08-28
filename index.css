@@ -24,6 +24,7 @@
 
 :root {
     --font-size-small: 1.8rem;
+    --font-size-tiny: 1.5rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
     --font-size-medium-1: 3.6rem;
@@ -407,6 +408,7 @@ body:not(.user-is-tabbing) a:focus {
     .nav {
         
         justify-content: center;
+        font-size: var(--font-size-tiny);
     }
 }
 
@@ -414,6 +416,7 @@ body:not(.user-is-tabbing) a:focus {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
+
 }
 
 @media(max-width: 300px) {
