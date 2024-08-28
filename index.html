@@ -29,7 +29,7 @@
           <li class="nav__item"><a href="#research" class="nav__link">Research Experiences</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Key Projects</a></li>
           <li class="nav__item"><a href="#social_impact" class="nav__link">Social Impact</a></li>
-          <li class="nav__item"><a href="https://chetanreddy1412.github.io/CV.pdf" class="nav__link">Resume</a></li>
+          <li class="nav__item"><a href="https://chetanreddy1412.github.io/CV.pdf" class="nav__link">CV</a></li>
           
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -69,10 +69,10 @@
               I am an incoming masters student at Stanford University. I have a dual degree in Mechanical Engineering and Data Science from IIT Madras, India. 
             <p>
             <p align="justify">
-              I am a Robotics and Artificial Intelligence Enthusiast with diverse industrial and research experiences. At Hokkaido University, Japan, I worked as a summer research intern in the summer of 2022. I spent my Fall 2022 as an semester exchange student at KTH Royal Institute of Technology, Sweden. I have also worked as a research intern at Adobe Research. My specific areas of interests include Reinforcement Learning, Robotic Vision and Safe Autonomous Systems. 
+              I am a Robotics and Artificial Intelligence Enthusiast with diverse industrial and research experiences. I was a Machine Learning Research Intern at Adobe Research in the summer of 2023 during which we developed a patent and successfully filed it in the USPTO. I spent my Fall 2022 as an semester exchange student at KTH Royal Institute of Technology, Sweden. I have also worked as a summer research intern at Hokkaido University, Japan. My specific areas of interests include Reinforcement Learning, Robotic Vision and Safe Autonomous Systems. 
             </p>
             <!-- Provide a link to your resume -->
-            <a href="https://chetanreddy1412.github.io/CV.pdf" class="btn">My Resume</a>
+            <a href="https://chetanreddy1412.github.io/CV.pdf" class="btn">Click Here to view my CV</a>
           </div>
 
           <!-- <div class="timeline">
@@ -125,9 +125,22 @@
             <div class="container right">
               <div class="content">
                 <h4>May 2022 - Jul 2022</h4>
-                Research Intern, Hokkaido University, Japan
+                RL Research Intern, Hokkaido University, Japan
               </div>
             </div>
+            <div class="container right">
+              <div class="content">
+                <h4>Dec 2021 - Jan 2022</h4>
+                Data Analysis Intern, Detect Technologies
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h4>May 2021 - Jun 2021</h4>
+                ML Intern, Digital Outcomes
+              </div>
+            </div>
+
             <div class="container right">
               <div class="content">
                 <h4>Jul 2019</h4>
@@ -162,7 +175,7 @@
                 The approach involves two steps: the first step is the utilization of expert
                 human input to establish a Safe State Space (SSS) and a corresponding Conservative Safe
                 Policy (CSP). In the second step, we used a modified version of the Deep Deterministic
-                Policy Gradient algorithm augmented with a safety layer (built using SSS and CSP) that
+                Policy Gradient algorithm (DDPG) augmented with a safety layer (built using SSS and CSP) that
                 is learned by the agent during the training.
               </p>
 
@@ -185,6 +198,9 @@
                 <source src="./images/Projects/SafeDDPG.mp4" type="video/mp4">
 
               </video>
+              <div class="work__image-description">
+                <p>SafeDDPG results on two Safe RL Benchmark Environments</p>
+              </div>
               <!-- <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="320" height="240"/> -->
             </div>
           </div>
@@ -205,6 +221,9 @@
             </div> -->
             <div class="work__image-box">
               <img src="./images/Projects/Adobe/dags_clustering.png" class="work__image" alt="Project 3" width="400" height="400"/>
+              <div class="work__image-description">
+                <p>Clustering Users by learning the underlying Causal Relationships</p>
+              </div>
             </div>
           </div>
 
@@ -234,6 +253,10 @@
               <video controls>
                 <source src="./images/Projects/Ellipsoidal_CBF.mp4" type="video/mp4">
               </video>
+
+              <div class="work__image-description">
+                <p>The turtlebot navigates using the CBF based control outputs</p>
+              </div>
               <!-- <img src="./images/Projects/cbf_ellipsoid.png" class="work__image" alt="Project 1" width="500" height="400"/> -->
             </div>
           </div>
@@ -261,6 +284,9 @@
               <video controls>
                 <source src="./images/Projects/STSI/Traffic Flow.mp4" type="video/mp4">
               </video>
+              <div class="work__image-description">
+                <p>Traffic Flow Optimisation in the presence of an obstacle on Road (Car 1 is an RL agent while the other cars are rule based and simulated)</p>
+              </div>
             </div>
 
           </div>
@@ -337,6 +363,9 @@
                 <source src="./images/Projects/RL Games/Trained Agent vs Another Agent.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
+              <div class="work__image-description">
+                <p>Our RL agent (A - Blue) vs Opponent agent (B - Red)</p>
+              </div>
               <!-- <img src="./images/Projects/RL_Games.png" class="work__image" alt="Project 1"  width="400" height="400"/> -->
             </div>
           </div>
@@ -363,8 +392,10 @@
             <div class="work__image-box">
               <video controls>
                 <source src="./images/Projects/Autonomous Mission Planner/tiago.mp4" type="video/mp4">
-
               </video>
+              <div class="work__image-description">
+                <p>The Tiago robot autonomously performs a Pick and Place task</p>
+              </div>
               <!-- <img src="./images/Projects/tiago.png" class="work__image" alt="Project 1"  width="300" height="400"/> -->
             </div>
           </div>
@@ -397,6 +428,9 @@
               <video controls>
                 <source src="./images/Projects/Flipkart/Flipkart Grid.mp4" type="video/mp4" />
               </video>  
+              <div class="work__image-description">
+                <p>A CV based centralised controller generating waypoints and velocity commands to the bot</p>
+              </div>
             </div>
           </div>
 
@@ -425,7 +459,11 @@
                 Your browser does not support the video tag.
               </video> -->
               <img src="./images/Projects/volatility.png" class="work__image" alt="Project 1"  width="600" height="400"/>
+              <div class="work__image-description">
+                <p>Network architecture used for predicting the volatility surface</p>
+              </div>
             </div>
+
           </div>
 
         </div>
@@ -471,6 +509,9 @@
               <a href="https://www.youtube.com/watch?v=uyRifRll5lA&ab_channel=ShaastraIITM">
                 <img src="./images/Projects/Upskill/upskill YT.png" class="work__image" alt="Project 1"  width="500" height="400"/>
               </a>
+              <div class="work__image-description">
+                <p>Click to view the Panel Discussion</p>
+              </div>
             </div>
           </div>
   
