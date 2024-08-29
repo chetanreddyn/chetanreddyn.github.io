@@ -759,6 +759,29 @@ body:not(.user-is-tabbing) a:focus {
     border-radius: 50%;
     z-index: 1;
   }
+
+  .stan_container {
+    padding-left: 2vw;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 1vw;
+    position: relative;
+    /* background-color: white; */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .stan_container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--pink);
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
   
   /* Add arrows to the right container (pointing left) */
   .right::before {
@@ -821,6 +844,21 @@ body:not(.user-is-tabbing) a:focus {
       border-color: transparent white transparent transparent;
     }
   
+  /* Full-width containers */
+  .stan_container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .stan_container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
       left: 15px;
