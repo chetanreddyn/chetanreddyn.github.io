@@ -188,7 +188,7 @@
                 The approach involves two steps: the first step is the utilization of expert
                 human input to establish a Safe State Space (SSS) and a corresponding Conservative Safe
                 Policy (CSP). In the second step, we used a modified version of the Deep Deterministic
-                Policy Gradient algorithm (DDPG) augmented with a safety layer (built using SSS and CSP) that
+                Policy Gradient algorithm which we called SafeDDPG augmented with a safety layer (built using SSS and CSP) that
                 is learned by the agent during the training.
               </p>
 
@@ -212,7 +212,9 @@
 
               </video>
               <div class="work__image-description">
-                <p>SafeDDPG results on two Safe RL Benchmark Environments</p>
+                <p>SafeDDPG results on two Safe RL Benchmark Environments. In the pendulum environment, safety is defined as staying within 20 degrees. 
+                  In the second environment, the bot earns high rewards for moving along the circle but must stay within the yellow walls.
+                </p>
               </div>
               <!-- <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="320" height="240"/> -->
             </div>
