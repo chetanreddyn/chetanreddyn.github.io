@@ -491,12 +491,16 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 700px) {
     .header {
-        /* text-align: center;
-        background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/Stanford\ BG\ 2.jpg');*/
-        background-position: center; 
-        font-size: var(--font-size-small);
-    }
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/Stanford\ BG\ 5.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: var(--font-size-small);
+}
 
     .header__text p {
         transform: scale(.8);
