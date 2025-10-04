@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/C.png" />
+  <title>Research Experiences | Chetan Reddy Narayanaswamy</title>
+  <meta name="description" content="Research Experiences">
+  <link rel="stylesheet" href="research.css" />
+</head>
+
+<body>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="research.html" class="nav__link">Research Experiences</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Key Projects</a></li>
+          <li class="nav__item"><a href="index.html#social_impact" class="nav__link">Social Impact</a></li>
+          <li class="nav__item"><a href="https://chetanreddyn.github.io/Resume.pdf" class="nav__link">Resume</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="research" id="research">
+      <div class="row">
+        <h2>Research Experiences</h2>
+        <!-- Copy all the research content from index.html here -->
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text" id="iprl_charm_stanford">
+              <h3>Autonomous Surgical Robotic Arm using Imitation Learning</h3>
+              <h4><u>CHARM and IPRL Labs, Stanford University, California</u> </h4>
+              <p align="justify">
+                I am exploring transformer based imitation learning algorithms (Action Chunking with Transformers - ACT architecture) to enable the autonomous manipulation of one of the da Vinci surgical robotic arm which assists the surgeon.
+              </p>
+
+              <p align="justify">
+                I developed a teleoperation system using the Phantom Omni haptic device to control the robotic arm and am collaborating with domain experts to build a data collection pipeline for surgical task demonstrations.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddyn/Autonomous-Surgical-Robot" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddyn/Autonomous-Surgical-Robot" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+
+              
+            </div>
+            <div class="work__image-box">
+              <video controls>
+                <source src="./images/Projects/CHARM/phantom_teleop.mp4" type="video/mp4">
+              </video>
+              <div class="work__image-description">
+                <p>
+                  Click to Play. The video shows the teleoperation of one of the Da Vinci Surgical Robotic Arm using the Phantom Omni Device and another Arm from the Surgeon Console
+                </p>
+              </div>
+              <!-- <img src="./images/Projects/CHARM/davinci.jpg" class="work__image" alt="Project 1" width="320" height="240"/> -->
+            </div>
+
+          </div>
+
+          <div class="work__box">
+            <div class="work__text" id="armlab_stanford">
+              <h3>Improving Spatial Awareness of an Intelligent Prosthetic Arm using VLMs</h3>
+              <h4><u>Stanford University, California</u> </h4>
+              <p align="justify">
+                As an MS researcher at ARMLab, Stanford University, I worked on a project that aims to process video feeds from multiple cost-effective cameras to detect objects of interest using VLMs and ensure safety of a prosthetic arm. I have developed a pipeline in ROS that enables 3D tracking of objects, visualized in RViz, as they transition across the fields of view of different cameras.              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddyn/IPARM-Spatial-Awareness" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddyn/IPARM-Spatial-Awareness" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+
+              
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <!-- <video controls>
+                <source src="./images/Projects/SafeDDPG.mp4" type="video/mp4">
+
+              </video> -->
+              <!-- <div class="work__image-description">
+                <p>SafeDDPG results on two Safe RL Benchmark Environments. In the Pendulum environment, safety is defined as staying within 20 degrees. 
+                  In the SafetyPointCircle environment, the bot earns high rewards for moving along the circle but must stay within the yellow walls.
+                </p>
+              </div> -->
+              <img src="./images/Projects/ARMLab/Smart-prosthesis-AI.jpg" class="work__image" alt="Project 1" width="320" height="240"/>
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text" id="ddp">
+              <h3>Human in the Loop, Safe Reinforcement Learning</h3>
+              <h4><u>Indian Institute of Technology, Madras</u> </h4>
+              <p align="justify">
+                As a part of my dual degree thesis, I developed a human-in-the-loop safe reinforcement learning framework that ensures safety in both training and
+                deployment. 
+              </p>
+              <p align="justify">
+                The approach involves two steps: the first step is the utilization of expert
+                human input to establish a Safe State Space (SSS) and a corresponding Conservative Safe
+                Policy (CSP). In the second step, we used a modified version of the Deep Deterministic
+                Policy Gradient algorithm which we called SafeDDPG augmented with a safety layer (built using SSS and CSP) that
+                is learned by the agent during the training.
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddyn/Safe-RL" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddyn/Safe-RL" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video width="320" height="240" controls>
+                <source src="./images/With_Safe_Set.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+              <video controls>
+                <source src="./images/Projects/SafeDDPG.mp4" type="video/mp4">
+
+              </video>
+              <div class="work__image-description">
+                <p>SafeDDPG results on two Safe RL Benchmark Environments. In the Pendulum environment, safety is defined as staying within 20 degrees. 
+                  In the SafetyPointCircle environment, the bot earns high rewards for moving along the circle but must stay within the yellow walls.
+                </p>
+              </div>
+              <!-- <img src="./images/Projects/safe_rl.png" class="work__image" alt="Project 1" width="320" height="240"/> -->
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text" id = "adobe">
+              <h3>Causal Artificial Intelligence | Patent*</h3>
+              <h4><u>Adobe Research, Bengaluru </u> </h4>
+              <p align="justify">
+                With counterparts from other IITs (Indian Institute of Technology), I worked on a group project in the field of Causal Artificial Intelligence. We built a novel deep learning-based causal inference algorithm designed to cluster markets.
+                <br>
+                <br>
+                *We developed a patent from our work which was successfully filed at the US Patent and Trademark Office (USPTO), receiving a grant of $7,200.
+              </p>
+            </div>
+            <!-- <div class="work__image-box">
+              <img src="./images/Projects/Adobe/causal_graph.png" class="work__image" alt="Project 3" width="400" height="400"/>
+            </div> -->
+            <div class="work__image-box">
+              <img src="./images/Projects/Adobe/dags_clustering.png" class="work__image" alt="Project 3" width="400" height="400"/>
+              <div class="work__image-description">
+                <p>Clustering Users by learning the underlying Causal Relationships</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text" id="kth">
+              <h3>Reactive Obstacle Avoidance using Depth Images and CBFs</h3>
+              <h4><u>Royal Institute of Technology, Sweden</u> </h4>
+              <p align="justify">
+                In this work, we constructed a low level obstacle avoidance controller that does not rely on global localisation or pre-existing maps
+                 while providing provable guarantees to safety in an unknown and uncertain environment. <br><br>
+                I built a fully functioning pipeline in ROS that generates the safe sets from the depth images and a control barrier function (CBF) based controller
+                that uses these safe sets to generate the velocity commands. 
+              </p>
+
+
+              <div class="work__links">
+                <a href="https://github.com/chetanreddyn/safe-obstacle-avoidance" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/chetanreddyn/safe-obstacle-avoidance">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <video controls>
+                <source src="./images/Projects/Ellipsoidal_CBF.mp4" type="video/mp4">
+              </video>
+
+              <div class="work__image-description">
+                <p>The turtlebot navigates using the CBF based control outputs</p>
+              </div>
+              <!-- <img src="./images/Projects/cbf_ellipsoid.png" class="work__image" alt="Project 1" width="500" height="400"/> -->
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text" id="stsi">
+              <h3>Deep RL in Autonomous Cars</h3>
+              <h4><u>Hokkaido University, Japan</u> </h4>
+              <p align="justify">
+                I worked on applying deep reinforcement learning in autonomous cars to optimize traffic flow in scenarios like signal intersections and highway merges. 
+                I explored various state space encodings for traffic representation and implemented extensions to deep Q learning, 
+                such as double Q learning, prioritized replay, dueling networks, and noisy nets. <br><br>Having conducted a thorough empirical analysis, 
+                I showed that RL-based autonomous cars can reduce congestion time significantly compared to rule-based agents by 30%.
+              </p>
+              <div class="work__links">
+                <a href="https://oggs.oia.hokudai.ac.jp/en/experience/1426" class="link__text">
+                  View Report <span>&rarr;</span>
+                </a>
+
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <img src="./images/Projects/deep_rl.png" class="work__image" alt="Project 3" width="400" height="400"/> -->
+              <video controls>
+                <source src="./images/Projects/STSI/Traffic Flow.mp4" type="video/mp4">
+              </video>
+              <div class="work__image-description">
+                <p>Traffic Flow Optimisation in the presence of an obstacle on on the road (Car 1 is an RL agent while the other cars are rule based and simulated)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <!-- Copy contact section from index.html -->
+  </section>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
