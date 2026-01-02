@@ -33,6 +33,43 @@
         <!-- Copy all the projects content from index.html here -->
         <div class="work__boxes">
           <div class="work__box">
+            <div class="work__text" id="pick_n_place">
+              <h3>Pick and Place Manipulation on UR5 Robot</h3>
+              <h4><u>Robot Perception, Prof. Shuran Song</u> </h4>
+              <p align="justify">
+                Under the guidance of Prof. Shuran Song at Stanford, I developed a learning-based pick-and-place system on a UR5 robot. 
+                The work focused on building an end-to-end manipulation pipeline in PyBullet with RGB-D sensing and TSDF-based 3D reconstruction for scene understanding. 
+
+              </p>
+              <p>
+                I trained a U-Net for instance segmentation and used the predicted masks to extract object point clouds and estimate full 6-DoF poses using ICP in SE(3). 
+                Building on this perception stack, I implemented an action-affordance–based, model-free grasping strategy for unseen objects, achieving 12 successful grasps out of 15 trials.
+              </p>
+
+
+
+
+              <!-- <div class="work__links">
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" target="_blank" class="link__text">
+                  Visit GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/akshatnagar50/Vision-Based-Drone-Controller" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div> -->
+            </div>
+            <div class="work__image-box">
+              <video controls>
+                <source src="./images/Projects/pick_n_place/UR5 Pick and Place.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="work__image-description">
+                <p>Pick and Place using UR5 in PyBullet</p>
+              </div>
+              <!-- <img src="./images/Projects/drone2.jpg" class="work__image" alt="Project 1" /> -->
+            </div>
+          </div>
+          <div class="work__box">
             <div class="work__text" id="drona">
               <h3>Drone Swarm Challenge</h3>
               <h4><u>Inter-IIT Tech Meet 2023, IIT Kanpur</u> </h4>
